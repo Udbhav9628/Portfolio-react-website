@@ -1,0 +1,41 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  height: 100vh;
+  color: white;
+  background: url("./img");
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.heroContainer {
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rebeccapurple;
+}
+
+.whoContainer {
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgb(79, 2, 50);
+}
+
+.worksContainer {
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgb(20, 79, 2);
+}
+
+.contactContainer {
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: rgb(7, 2, 79);
+}
