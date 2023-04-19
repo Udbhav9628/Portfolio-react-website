@@ -1,5 +1,7 @@
 import '../style.css'
 import Navbar from './Navbar'
+const line = require('../img/line.png')
+const Modal = require('../img/moon.png')
 
 const Hero = () => {
     return (
@@ -7,16 +9,22 @@ const Hero = () => {
             <Navbar />
             <div className="mainContent">
                 <div id="mainContentLeft">
-                    <h1>Think. Make. Solve.</h1>
-                    <div id="whatweDo">
-                        <img src="" alt="" />
+                    <h1 id='h1Hero'>Hi, I'm Udbhav</h1>
+                    <div id='LineImg'>
+                        <img src={line} alt="Line" height={'5px'} />
+                        <h2 style={{
+                            color: "#da4ea2",
+                        }}>Full Stack Web & App Developer</h2>
                     </div>
-                    <div id="discription">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, officia.</p>
-                        <button>Hello</button>
-                    </div>
+                    <p style={{
+                        fontSize: '1.4rem',
+                        color: "lightgray",
+                    }}>I create products. Innovation is my passion</p>
+                    <button className='hireButton'>View Work</button>
                 </div>
-                <div id="mainContentRight">Right</div>
+                <div id="mainContentRight">
+                    <img id='Modal' src={Modal} alt="3d Modal" width={'600px'} height={'600px'} />
+                </div>
             </div>
         </div>
     )

@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
                 <div className='navIcons'>
                     <img id='navSearchbar' src={searchIcon} alt='Search' />
-                    <button id='hireButton'>Hire Now</button>
+                    <button className='hireButton'>Hire Now</button>
                 </div>
             </div>
         </div>

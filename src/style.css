@@ -8,11 +8,12 @@
   height: 100vh;
   width: 100vw;
   color: white;
-  background: url("../public/img/bg.jpeg");
+  background: url("./img//bg.jpeg");
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -20,73 +21,178 @@
 
 .heroContainer {
   height: 100vh;
+  width: 100vw;
   scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mainContent {
-  height: 100vh;
-  width: 1400px;
   display: flex;
-  /* flex-direction: column; */
+  width: 80%;
+}
+
+#LineImg {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
+}
+
+#h1Hero {
+  font-size: 3rem;
 }
 
 #mainContentLeft {
+  flex: 2;
+  gap: 20px;
   height: 100vh;
-  width: 1400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* background-color: #d5c8d0; */
+  align-items: flex-start;
+  justify-content: center;
 }
 
 #mainContentRight {
+  flex: 3;
   height: 100vh;
-  width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: #814eda;
+  justify-content: center;
+  position: relative;
+  height: 90%;
 }
 
-.whoContainer {
-  height: 100vh;
-  scroll-snap-align: center;
+#Modal {
+  object-fit: contain;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  animation: modal 2s infinite ease alternate;
 }
+
+@keyframes modal {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+/* ------------------Works------------------- */
 
 .worksContainer {
   height: 100vh;
   scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
 }
+
+.WorksmainContent {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Works_mainContentLeft {
+  flex: 1;
+}
+
+.WorksList {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100%;
+  justify-content: center;
+}
+
+#Works_mainContentRight {
+  flex: 1;
+}
+
+/* ------------------Works------------------- */
+
+/* ---------------------Content------------------ */
 
 .contactContainer {
   height: 100vh;
   scroll-snap-align: center;
 }
 
+#contactH1 {
+  font-weight: 200;
+}
+
+.contactInput {
+  padding: 18px;
+  background-color: #e8e6e6;
+  border: none;
+  border-radius: 5px;
+}
+
+.ContactmainContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactButton {
+  padding: 18px;
+  color: white;
+  background-color: #da4ea2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contentLeft {
+  width: 400px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentwidth {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  align-items: center;
+}
+
+.contentRight {
+  height: 100%;
+  width: 50%;
+  /* background-color: #3421e3; */
+}
+
+/* ---------------------Content------------------ */
+
 /* ------------------Navbar------------------ */
 
 .navbarStyle {
   display: flex;
   justify-content: center;
+  width: 80%;
 }
 
 .navContainer {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  /* background-color: darkkhaki; */
 }
 
 .navLinks {
   display: flex;
   gap: 60px;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .navIcons {
@@ -115,7 +221,7 @@
   cursor: pointer;
 }
 
-#hireButton {
+.hireButton {
   width: 90px;
   height: 35px;
   padding: 1px;
