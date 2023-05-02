@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import Wroks from './components/Wroks'
 import Contact from './components/Contact'
+import Three from './components/Three'
 import './style.css'
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
             <Hero />
             <Wroks />
             <Contact />
+            <Three />
         </div>
     )
 }
